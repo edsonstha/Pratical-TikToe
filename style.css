@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: #389573;
+}
+
+.head{
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+text-align: center;
+margin-top: 30px;
+color: white;
+font-size: 1.6rem;
+
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+
+.box{
+    height: 17vmin;
+    width: 18vmin;
+    margin-left: 2px;
+    border: none;
+    font-size: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 0px 12px rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+    color : black;
+    background: rgba(232, 225, 225, 0.971);
+}
+
+#reset{
+    color: white;
+    background: linear-gradient(to left,rgb(160, 210, 205),#59845e);
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+    left: 44.5%;
+    cursor: pointer;
+}
+
+#reset:hover{
+    box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.7s;
+
+}
+
+#msg
+{
+    color: White;
+    font-size: 3rem;
+    text-align: center;
+}
+.msg-container{
+        width: 400px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: black;
+        position: absolute;
+        top: 39%;
+        left: 36.8%;
+}
+
+.hide{
+    display: none;
+    position: absolute;
+    top: 50%;
+}
+
+#new-btn{
+    width: 100px;
+    height: 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;   
+    position: relative;
+    left: 40%;
+    cursor: pointer;
+    
+}
+
+.draw-mess{
+    color: gray;
+    font-style: italic;
+}
+@media screen and (max-width: 768px) {
+    /* Adjust container and game board for mobile */
+    .container {
+        height: 50vh;
+        margin-top: 20px;
+    }
+
+    .game {
+        height: 80vmin;
+        width: 80vmin;
+        gap: 1.5vmin;
+    }
+
+    .box {
+        height: 24vmin;
+        width: 24vmin;
+        font-size: 2.5rem;
+    }
+
+    /* Adjust reset button positioning */
+    #reset {
+        padding: 10px 20px;
+        font-size: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10px;
+    }
+
+    /* Make message container fit mobile screens */
+    .msg-container {
+        width: 90%;
+        left: 5%;
+        top: 30%;
+        padding: 15px 0;
+    }
+
+    #msg {
+        font-size: 2rem;
+    }
+
+    /* Adjust new game button */
+    #new-btn {
+        width: 80px;
+        height: 25px;
+        font-size: 0.9rem;
+        left: 35%;
+    }
+
+    /* Headline adjustments */
+    .head {
+        font-size: 1.3rem;
+        margin-top: 15px;
+    }
+}
+
+/* For very small devices (e.g., iPhone SE) */
+@media screen and (max-width: 375px) {
+    .box {
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 2rem;
+    }
+
+    #msg {
+        font-size: 1.8rem;
+    }
+
+    .msg-container {
+        top: 25%;
+    }
+}
